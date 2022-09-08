@@ -1,0 +1,96 @@
+﻿@{
+  ViewBag.Title = "Home Page";
+}
+<head>
+    @* FONTS DOWNLOADED *@
+    @*<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>*@
+
+
+    <link href="~/Content/Site.css" rel="stylesheet" /> @*This needs to be here*@
+    <style> /*Only apply to this page*/
+        p {
+            color: var(--light-color);
+        }
+    </style>
+
+</head>
+
+@*<div>
+        <h1 class="CMS-text-white CMS-text-bigger">Welcome to Theatre Vertigo</h1>
+        <p class="text-xl-center">@Html.ActionLink("About Theatre Vertigo", "About", new { }, new { @class = "CMS-text-bigger" })</p>
+    </div>*@
+
+@*Logo Image*@
+<div class="Home-Index--vertical-center">
+    <a href="https://www.youtube.com/watch?v=oHg5SJYRHA0" class="mx-auto d-block">
+        <img src="~/Content/images/TheatreLogo.png" />
+    </a>
+</div>
+
+<div class="container">
+    @*Left Column*@
+
+    <div class="row">
+        <div class="col-8">
+            <h2 class="Home-Index--oswald mb-2">SPOTLIGHT</h2><div class="Home-Index--my_decorative_rect"></div>  @*class names are CASE SENSITIVE*@
+            <img class="container-fluid" src="~/Content/images/DollsHouse.png" />
+            <img class="container-fluid" src="~/Content/images/tempest_v2.png" />
+        </div>
+
+        @*Right column*@
+
+        <div class="col-4">
+            <h2 class="Home-Index--oswald">DONATIONS</h2><div class="Home-Index--my_decorative_rect"></div>
+            <button type="button" class="btn Home-Index--my_button mx-auto d-block col-6">Click To Support</button>
+            <h2 class="Home-Index--oswald">SPONSORS</h2><div class="Home-Index--my_decorative_rect"></div>
+            <div class="container mt-3">
+                <img class="col-3" src="~/Content/images/Sponsors/LogoRoundColor.png" />
+                <img class="col-3" src="~/Content/images/Sponsors/Ninkasi-white-text.png" />
+                <img class="col-5" src="~/Content/images/Sponsors/Ellyn-Bye-Logo.png" />
+
+                <img class="col-5" src="~/Content/images/Sponsors/OCF-logo-in-white-with-tagline-lg.png" />
+                <img class="col-5" src="~/Content/images/Sponsors/RACC.png" />
+            </div>
+        </div>
+    </div>
+
+    @*ROW 2 Left Column*@
+
+    <div class="row mt-5">
+        <div class="col-8">
+            <h2 class="Home-Index--oswald mb-2">LAND ACKNOWLEDGEMENT</h2><div class="Home-Index--my_decorative_rect"></div>
+            <p>
+                Theatre Vertigo humbly acknowledges we live and work on the unceded,
+                traditional tribal lands of the Multnomah, Wasco, Clackamas, Chinook bands,
+                Kathlamet, Tualatin, Kalapuya, Cowlitz, Mollala, Cascades, Oregon City Tumwater,
+                Confederated Tribes of the Grand Ronde and other indigenous peoples.
+            </p>
+
+            <p>
+                <strong>We are on stolen land.</strong>
+            </p>
+            <p>
+                Theatre Vertigo has been and continues to examine our community relationships to
+                ensure our collaborators, partners and sponsors support our Indigenous Nations and communities.
+            </p>
+            <p>
+                One of the ways Theatre Vertigo is wokring to act on out commitment to being
+                of service to the lands we now share is to build bridges between our arts community and local Nations.
+            </p>
+        </div>
+
+        @*ROW 2 Right column*@
+
+    <div class="col-4">
+
+        <img class="col-9 mb-3" src="~/Content/images/NAYAFamilyCenter.jpg" target="_blank"/>
+        <a  href="https://nayapdx.org/">
+            <p class="col-9 d-inline-block" style="text-align:center;">
+               Click to visit the NAYA Family Center and learn more about suporting our local indigenous communities.
+            </p>
+        </a>
+    </div>
+    </div>
+</div>
+
+
