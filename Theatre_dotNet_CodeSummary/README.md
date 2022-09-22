@@ -4,17 +4,26 @@ Various projects created using one of the most popular languages, Javascript
 
 ## Projects
 
-### [Tic Tac Toe](https://github.com/MrSchaffner/Javascript/tree/master/TicTacToe)
+### [Authorization and Auto Login](https://github.com/MrSchaffner/)
 
-The classic game with a surprising Breakfast Theme. If you harrass me, <i>maybe</i> I'll add some AI difficulty features. 
+Roles saved in AspNetRoles table for easy access by .NET
+Role Authorization changed in Controller.
+Edit and Delete pages locked to specific Roles.
+Debugging button added for quick login.
 
-### [Calculator App](https://github.com/MrSchaffner/Javascript/tree/master/Basic_JS_Projects/Project14_Calculator)
+### [Theatre HomePage](https://github.com/MrSchaffner/)
 
-A sleek halloween-themed web Calculator.
+Styled to the specifications of the client. Images were revised and resized to achieve a more standard layout.
+Done using Bootstrap.
 
-### [Pizza Menu App](https://github.com/MrSchaffner/Javascript/tree/master/pizzaMenu)
+### [Rental History CRUD](https://github.com/MrSchaffner/)
 
-Fresh and hot Pizza is just a click away!
+Create, Read, Update, Delete and Index Pages created with .NET framework. 
+Modified from the default table. Remains lightweight.
+Styled according to specifications and required colors.
+Bootstrap Dropdown for accessing entry settings.
+Javascript sort function.
+Automatically truncate entries that would not fit.
 
 ```bash
 <script>

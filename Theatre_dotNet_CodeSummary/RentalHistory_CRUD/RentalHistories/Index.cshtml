@@ -1,0 +1,120 @@
+﻿@model IEnumerable<TheatreCMS3.Areas.Rent.Models.RentalHistory>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*need this*@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+<h2 style="text-align:center;">Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+
+<div class="container RentalHistory-Index--Box rounded">
+    <table id="myTable" class="table RentalHistory-Index--table">
+        <tr>
+            <th colspan="3">
+                <h4 class="RentalHistory-Index--h4"> Most Recent Rental History</h4>
+                <!--<th colspan="3">
+                <h2> Most Recent Rental History</h2>-->
+                @*@Html.DisplayNameFor(model => model.RentalDamaged)*@
+                <!--</th>
+                <th>-->
+                @*@Html.DisplayNameFor(model => model.DamagesIncurred)*@
+                <!--</th>
+                <th>-->
+                @*@Html.DisplayNameFor(model => model.Rental)*@
+                <!--</th>
+                <th></th>-->
+            </th>
+            <th colspan="2" style="text-align: right">
+                <label for="sortOrder">Sort Order:</label>
+
+                <select name="sortOrder" id="sortOrder">
+                    <option value="AZ">A-Z</option>
+                    <option value="ZA">Z-A</option>
+                    <option value="damage">Damaged First</option>
+                    <option value="damageRev">Damaged Last</option>
+                    <option value="new">Newest First</option>
+                    <option value="old">Oldest First</option>
+                </select>
+            </th>
+        </tr>
+
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td width="25">
+                    <p class="">
+                        @*<span class="badge badge-secondary ">*@
+                        <strong>
+                            @Html.DisplayFor(modelItem => item.RentalHistoryId)
+                        </strong>
+                    </p>
+                </td>
+                <td width="25">
+                    @*displays a checkbox*@
+                    @*@Html.DisplayFor(modelItem => item.RentalDamaged)*@
+
+                    @{ if (item.RentalDamaged)
+                        {
+                            <span class="fa-solid fa-circle-xmark fa-xl" style="color: orangered;"></span>
+                        }
+                        else
+                        {
+                            <span class="fa-solid fa-check-circle fa-xl" style="color: green;"></span>
+                        }
+                    }
+                </td>
+
+                <td>
+                    <p class="RentalHistory-Index--truncate">
+                        @*<span class="badge badge-secondary ">*@
+                        <strong>
+                            @Html.DisplayFor(modelItem => item.Rental)
+                        </strong>
+                    </p>
+                </td>
+                <td>
+                    <p class="RentalHistory-Index--truncate">
+                        @Html.DisplayFor(modelItem => item.DamagesIncurred)
+                    </p>
+
+                </td>
+                <td style="text-align: right">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="fa-solid fa-gear fa-xl" style="color: white;"></span>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="@Url.Action("Edit", "RentalHistories", new { id = item.RentalHistoryId })">
+                                <span class="fa-solid fa-pen-to-square fa-xl" style="color: black;"></span>
+                                EDIT
+                            </a>
+                            <a class="dropdown-item" href="@Url.Action("Details", "RentalHistories", new { id = item.RentalHistoryId })">
+                                <span class="fa-solid fa-list fa-xl" style="color: black;"></span>
+                                DETAILS
+                            </a>
+                            <a class="dropdown-item">
+                                <hr />
+                            </a>
+
+                            <a class="dropdown-item" href="@Url.Action("Delete", "RentalHistories", new { id = item.RentalHistoryId })">
+                                <span class="fa-solid fa-trash-can fa-xl" style="color: orangered;"></span>
+                                <font style="color:orangered;">DELETE</font>
+                            </a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        } @*foreach item in model*@
+
+    </table>
+</div>

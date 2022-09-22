@@ -1,0 +1,140 @@
+﻿/* ▼ This ▼ is for you to easily reference the colors on the Site.css page */
+/* Do not uncomment these color variables */
+
+/* CSS color variables */
+/*:root {*/ /* Color palette for css */
+/*--main-color: #DB1A11;*/ /* Red */
+/*--main-color--light: #F04D44;*/ /* Red, a shade lighter */
+/*--secondary-color: #D6972A;*/ /* Yellow gold */
+/*--light-color: #FFFBFB;*/ /* White */
+/*--dark-color: #000000;*/ /* Black */
+/*--secondary-color--dark: #9D7C39;*/ /* Dark Gold */
+/*--light-blue: rgb(93, 123, 244)*/ /*Light Blue - Added color on top of original*/
+/*}*/
+
+
+.RentalHistory-CreateEdit--h2{
+    font-family: "Oswald","Times New Roman";
+    color: var(--light-color);
+}
+
+.RentalHistory-CreateEdit--Box {
+    max-width: 600px;
+    background-color: var(--main-color--light);
+}
+
+.RentalHistory-CreateEdit--my_button {
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    /*margin-bottom: 1em;*/
+    margin-top: 2em;
+}
+
+/*.Home-Index--my_decorative_rect {
+    height: .25em;
+    width: 5em;
+    background-color: var(--main-color--light);
+    margin-top: 1em;
+    margin-bottom: 2em;
+}*/
+
+.RentalHistory-CreateEdit--vertical-center {
+    min-height: 95%; /* Fallback for browsers do NOT support vh unit */
+    min-height: 95vh; /* These two lines are counted as one :-)       */
+    display: flex;
+    align-items: center;
+}
+
+.RentalHistory-CreateEdit--CheckBox{
+    /*background-color:yellow;*/
+    width: 30px;
+    height:30px;
+}
+
+.RentalHistory-CreateEdit--Black
+{
+    background-color: black;
+    color: var(--light-color);
+}
+
+.RentalSurvey-CreateEdit--my_button {
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+}
+
+.RentalSurvey-Delete--my_button {
+    background-color: var(--main-color);
+    color: var(--light-color);
+}
+
+/*Rent/Index CSS:*/
+.RentalHistory-Index--OptionsBox {
+    align-self: end;
+    height: 150px;
+    width: 150px;
+    background-color: var(--light-color);
+    border-color: var(--main-color);
+    padding: .1em;
+}
+
+.RentalHistory-Index--table { /*Temporary Class for Readability in RentalHistories/INDEX.cshtml*/
+    color: black;
+    padding: 2em;
+}
+
+.RentalHistory-Index--h4 {
+    font-family: "Oswald","Times New Roman";
+    color: black;
+}
+
+.RentalHistory-Index--Box {
+    max-width: 1000px;
+    background-color: var(--light-color);
+    border-color: hotpink;
+    /*border-color: var(--main-color);*/
+    padding: 1em;
+}
+
+.RentalHistory-Index--my_button {
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    /*margin-bottom: 1em;*/
+    margin-top: 2em;
+}
+
+/*.Home-Index--my_decorative_rect {
+        height: .25em;
+        width: 5em;
+        background-color: var(--main-color--light);
+        margin-top: 1em;
+        margin-bottom: 2em;
+    }*/
+
+.RentalHistory-Index--vertical-center {
+    min-height: 95%; /* Fallback for browsers do NOT support vh unit */
+    min-height: 95vh; /* These two lines are counted as one :-)       */
+    display: flex;
+    align-items: center;
+}
+
+.RentalHistory-Index--CheckBox {
+    /*background-color:yellow;*/
+    width: 30px;
+    height: 30px;
+}
+
+.RentalHistory-Index--Black {
+    background-color: black;
+    color: var(--light-color);
+}
+
+.RentalHistory-Index--truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 250px;
+}
+
+p.test{
+    color:yellow;
+}

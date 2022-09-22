@@ -1,0 +1,99 @@
+﻿
+<meta name="viewport" content="width=device-width" />
+<title>DevButtons</title>
+<style>
+
+    .RentalHistory-DevButtons-btn {
+        background-color: var(--secondary-color);
+        color: var(--light-color);
+        /*margin-bottom: 1em;*/
+        margin-top: 2em;
+    }
+
+    .RentalHistory-DevButtons--position {
+        z-index: 10000; /*needed to rended atop other elements*/
+        position: fixed;
+        bottom: 5px;
+        right: 5px;
+    }
+
+    .RentalHistory-DevButtons--button {
+        background-color: var(--secondary-color);
+        color: var(--light-color);
+        /*margin-bottom: 1em;*/
+        margin-top: 2em;
+    }
+</style>
+<script>
+    function ClickButton1() {
+    $.ajax({
+        type: "POST",
+        url: '@Url.Action("ClickButton1", "Definition")',
+        async: true,
+        success: function (msg) {
+            ServiceSucceeded(msg);
+        },
+        error: function () {
+            return "error";
+        }
+    });
+}
+</script>
+
+
+@*need this for symbols*@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+
+
+
+<div class="RentalHistory-DevButtons--position">
+
+    @{
+        //doesn't appear to work
+        //string[] roleNames = Roles.GetRolesForUser();
+        //this works though:
+        IEnumerable<string> roleNames = ((System.Security.Claims.ClaimsIdentity)User.Identity).Claims
+            .Where(c => c.Type == System.Security.Claims.ClaimTypes.Role)
+            .Select(c => c.Value);
+
+
+        //show a button if not logged in
+        if (!roleNames.Contains("HistoryManager"))
+        {
+            <div>
+                @using (Html.BeginForm("EasyLogin", "Account", new { area = "", ReturnUrl = Request.Url.AbsoluteUri }, FormMethod.Post))
+                {
+                @Html.AntiForgeryToken()
+                <button type="submit" class="btn RentalHistory-DevButtons-btn rounded">
+                    Log in Button
+                    <span class="fa-solid fa-gear fa-xl" style="color: white;"></span>
+                </button>
+                }
+            </div>
+        }
+        else
+        {
+            //uncomment this to see if its working
+            @*<div style="color:red"> roleNames contains "HistoryManager" </div>*@
+        }
+    }
+
+
+</div>
+
+
+@*< input type = "button" value = "Create" onclick = "location.href='@Url.Action("ClickButton1", "AccountController")'" /> *@
+@*<a href="/Account/Login" id="loginLink">Log in</a>*@
+
+
+
+@*@Html.ActionLink(
+    linkText: "EasyLogin ActionLink",
+    actionName: "EasyLogin",
+    controllerName: "Account",
+    routeValues: new { area = "", RequestUrl = Request.Url.AbsoluteUri }, //Model *was declared above
+    htmlAttributes: FormMethod.Post
+    )*@
+

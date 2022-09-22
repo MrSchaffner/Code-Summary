@@ -1,0 +1,43 @@
+﻿@model TheatreCMS3.Areas.Rent.Models.RentalHistory
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>RentalHistory</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.RentalDamaged)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RentalDamaged)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DamagesIncurred)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DamagesIncurred)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Rental)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Rental)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.RentalHistoryId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
