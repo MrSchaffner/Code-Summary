@@ -2,7 +2,7 @@
 
 An options market indicator created for Financial club, The Goose Group. Connects Node.js server to Client JavaScript.
 
-## Version
+## Major Versions
 
 ### [Version 0.1](https://github.com/MrSchaffner/Code-Summary/tree/master/Market_Indicator_CodeSummary/SpyGlass_v1)
 
