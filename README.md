@@ -4,7 +4,7 @@ Unlike the other projects on GitHub, this repository only presents PARTS of proj
 
 ## Projects
 
-### [Live Market Indicator](https://github.com/MrSchaffner/Code-Summary/tree/master/SpyGlass_CodeSummary)
+### [Live Market Indicator](https://github.com/MrSchaffner/Code-Summary/tree/master/Market_Indicator_CodeSummary)
 
 An options market indicator created for financial club, The Goose Group. Connects Node.js server to Client JavaScript to display live Stock Market options data in an aesthetic format.
 
