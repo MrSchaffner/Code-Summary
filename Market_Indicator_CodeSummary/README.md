@@ -11,6 +11,7 @@ An options market indicator created for Financial club, The Goose Group. Connect
 * Processed live market data
 * Displayed data in readable form with Chart APIs
 * Invented Market Symbol eta (Greek H) for Hedge Impact (Half Joking)
+* Calls = Canary Yellow | Puts = Pink | Both = Blue
 
 <img
   src="https://github.com/MrSchaffner/Code-Summary/blob/master/Images_Display/spyglass_v1.png"
