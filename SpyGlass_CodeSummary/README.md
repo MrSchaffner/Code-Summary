@@ -4,7 +4,7 @@ An options market indicator created for Financial club, The Goose Group. Connect
 
 ## Projects
 
-### [Version 1](link here)
+### [Version 1](https://github.com/MrSchaffner/Code-Summary/tree/master/SpyGlass_CodeSummary/SpyGlass_v1)
 
 Used Javascript to consume market APIs in Websocket and RESTful form
 Implemented MVC Separation
@@ -12,11 +12,11 @@ Processed live market data
 Displayed data in readable form with Chart APIs
 
 <img
-  src="https://github.com/MrSchaffner/Unity/blob/master/Images_Display/Ball_Maze_01.png"
+  src="https://github.com/MrSchaffner/Code-Summary/blob/master/Images_Display/spyglass_v1.png"
   alt="Spyglass Version 1 Image"
   style="display: inline-block; margin: 0 auto; max-width: 300px">
 
-### [Version 2](link here)
+### [Version 2](https://github.com/MrSchaffner/Code-Summary/tree/master/SpyGlass_CodeSummary/SpyGlass_v2)
 
 Separated out program into 
 Node.js Server (Controller + Model) 
@@ -27,8 +27,10 @@ Node.js server consumed Sockets and RESTful APIs. Data was stored on server and 
 
 Separation improved multithreading and sped up program considerably. 
 
+Upgraded certain graphs away from Google Charts for speed.
+
 <img
-  src="https://github.com/MrSchaffner/Unity/blob/master/Images_Display/Ball_Maze_01.png"
+  src="https://github.com/MrSchaffner/Code-Summary/blob/master/Images_Display/spyglass_v2.jpg"
   alt="Spyglass Version 1 Image"
   style="display: inline-block; margin: 0 auto; max-width: 300px">
 
