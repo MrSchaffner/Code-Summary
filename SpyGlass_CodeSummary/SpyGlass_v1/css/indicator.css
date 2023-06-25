@@ -1,0 +1,157 @@
+﻿body {
+    border: 0px solid #000;
+    /*background-size: cover;*/
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: #111;
+    background-image: url('../resources/img/gooseGroupWatermark.png');
+    padding: 5px;
+    margin: 0;
+    overflow: hidden; /*hide scrollbars*/
+}
+
+
+p {
+    color: #fff;
+}
+
+h1 {
+    color: #fff;
+}
+
+/*IDs*/
+#dashboard_div {
+}
+
+#gooseImageContainer {
+    border: 0px solid #f00;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+#gooseVideoPlayer {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+/*classes*/
+
+/*dygraph classes*/
+
+.dygraph-axis-label.dygraph-axis-label-x, .dygraph-axis-label.dygraph-axis-label-y {
+    /* took an hour to find this shit
+    more data here: https://dygraphs.com/css.html */
+    color: #fff;
+}
+
+/*.dygraph-axis-label {
+    background-color: #fff;
+    color: #ff0000;*/
+/*text-decoration-color: white;*/
+/*}*/
+
+
+
+.table_container {
+    border: 0px solid #000;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+}
+
+.box_container {
+    /*display: flex;*/
+    /*justify-content: center;*/
+    margin: 0 auto;
+    /*background-color: blue;*/
+    /*border: 0px solid #000;*/
+    width: 100%;
+    height: 50%;
+}
+
+.chartTable {
+    width: 100%;
+    height: 100%;
+}
+
+
+.column {
+    /*background-color: green;*/
+    /*border: 0px solid #000;*/
+    width: 50%;
+    /*display: flex;*/
+}
+
+.chartItem {
+    /*background-color: red;*/
+    /*border: 0px solid #000;*/
+    width: 100%;
+    height: 100%;
+}
+
+
+.materialChartItem { /*these resize differently*/
+    /*border: 0px solid #000;*/
+    /*background-color: yellow;*/
+    width: 100%;
+    height: 100%;
+}
+
+
+.btn-group button {
+    margin: 0 auto;
+    border: 1px solid #fff;
+    padding: 10px 10px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left;
+}
+
+    .btn-group button:not(:last-child) {
+        /*border-right: none;*/ /* Prevent double borders */
+    }
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Add a background color on hover */
+button.btn-unpressed:hover {
+    background-color: #222;
+}
+
+button.btn-pressed:hover {
+    background-color: #ddd;
+}
+
+/*.btn-group button:active {
+    background-color: #444;
+}*/
+/*.btn-group button:focus {
+    background-color: #0f0;
+}
+*/
+
+.btn-pressed {
+    background-color: #fff;
+    color: #000;
+}
+
+.btn-unpressed {
+    background-color: #000; /*transparent; */
+    color: white; /* White text */
+}
+
+/*END of Classes*/
+
+
+
+/*sample*/

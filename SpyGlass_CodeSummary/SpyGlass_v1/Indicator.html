@@ -1,0 +1,114 @@
+<HTML>
+
+<head>
+    <title>The SpyGLass Indicator 0.1</title>
+    <link rel="stylesheet" href="css/indicator.css">
+
+    <!--jQuery for BUttons-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+    <div id="dashboard_div" class="table_container">
+        <div class="column">
+            <div class="box_container" style="height:25%;">
+                <!-- <div id="ticker_graph" class="chartItem"></div>-->
+                <div id="ticker_dygraph" class="chartItem"></div>
+            </div>
+            <div class="box_container" id="impact_graph_container" style="height:65%;">
+                <div class="btn-group" style="width: 680px;">
+                    <button class="btn-pressed" id="Auto">AUTO</button>
+                    <button class="ig_btn_time btn-unpressed" id="1Day">DAY</button>
+                    <button class="ig_btn_time btn-unpressed" id="1Hr">1 HR</button>
+                    <button class="ig_btn_time btn-unpressed" id="30Min">30 MIN</button>
+                    <button class="ig_btn_time btn-unpressed" id="10Min">10 MIN</button>
+                    <button class="ig_btn_time btn-unpressed" id="5Min">5 MIN</button>
+                    <button class="ig_btn_time btn-unpressed" id="1Min">1 MIN</button>
+                    <button class="ig_btn_time btn-pressed" id="30Sec">30 SEC</button>
+                </div>
+                <!--<div id="impact_graph" class="chartItem"></div>-->
+                <div id="impact_dygraph" class="chartItem"></div>
+            </div>
+        </div>
+
+        <div class="column">
+            <!--<div id="impact_table" class="chartItem"></div>-->
+            <div class="box_container" style="height: 25%;">
+                <div style=" position: relative;">
+                    <p id="hintsDiv" style="display:none; position: absolute; top: 0; left: 10px;">
+                        Move: Shift + Drag <br />
+                        Zoom: Draw Box <br />
+                        Reset: Double Click <br />
+                        Agg: Pause, Type Number in Box, Enter <br />
+                        Console: Ctrl + Shift + C <br />
+                    </p>
+                    <img id="gooseImageContainer" src="resources/img/logo_ai.jpg" />
+                </div>
+                
+            </div>
+            <div class="box_container" style="height:75%;">
+                <!--<div id="impact_dybars" class="chartItem"></div>-->
+                <div id="impact_bars" class="materialChartItem"></div>
+            </div>
+        </div>
+
+        <!--<iframe id="gooseVideoPlayer" src="https://www.youtube.com/embed/HiJPgQ7ML7c?controls=0&loop=1&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" autoplay></iframe>-->
+        <!--<div id="filter_div" style="padding-left: 2em; min-width: 250px"></div>
+        <div>
+          <button style="margin: 1em 1em 1em 2em" onclick="changeRange();">
+            Select range [2, 5]
+          </button><br />
+          <button style="margin: 1em 1em 1em 2em" onclick="changeOptions();">
+            Make the pie chart 3D
+          </button>
+        </div>-->
+
+
+    </div>
+
+
+    <!--Load the Google Charts AJAX API and classes-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <!-- Keys and COnstants     -->
+    <script src="js/keys.js"></script>
+
+    <!--buttons functions-->
+    <script src="js/UI_elements.js"></script>
+
+    <!-- How data is stored
+    requires google.charts, but is called by charts.js at runtime, so it should be fine.-->
+    <script src="js/model.js"></script>
+
+    <!--Dygraph local scripts-->
+    <script type="text/javascript" src="server/node_modules/dygraphs/dist/dygraph.js"></script>
+    <link rel="stylesheet" type="text/css" href="server/node_modules/dygraphs/dist/dygraph.min.css" />
+
+    <!-- Create the Google and dyGraph charts -->
+    <script type="text/javascript" src="js/charts.js"></script>
+
+    <!--Diagnostic Tools-->
+    <script src="js/diagnostic.js"></script>
+
+    <!-- Controller of Program -->
+    <script src="js/controller.js"></script>
+
+
+    <!-- WebSocket Data is Pulled -->
+    <script src="js/WebSocketScript.js"></script>
+    <!-- Restful -->
+    <script src="server/node_modules/axios/dist/axios.min.js"></script>
+    <script src="js/RestfulAPIScript.js"></script>
+
+    <script>
+
+        /////////////////////////////
+        // Start of Program
+
+        ControllerSetup();
+    </script>
+
+</body>
+
+</HTML>

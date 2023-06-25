@@ -1,0 +1,162 @@
+﻿body {
+    border: 0px solid #000;
+    /*background-size: cover;*/
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: #111;
+    background-image: url('../resources/img/gooseGroupWatermark.png');
+    padding: 0;
+    /*overflow: hidden;*/ /*hide scrollbars*/
+}
+
+div {
+    border: 5px solid #0ff;
+}
+
+h1 {
+    color: #fff;
+}
+
+/*IDs*/
+
+#gooseImageContainer {
+    border: 0px solid #f00;
+    object-fit: contain;
+    width:50%;
+    height: 50%;
+}
+
+#gooseVideoPlayer {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*classes*/
+
+.redBG {
+    background-color: red;
+}
+.yellowBG {
+    background-color: yellow;
+}
+.greenBG {
+    background-color: lawngreen;
+}
+.blueBG {
+    background-color: blue;
+}
+
+.flex_table {
+    border: 5px solid #f00;
+    /*width and height to 100% were causing an error with google charts*/
+    width: 2000px;
+    height: 1000px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row; /*left to right*/
+    flex-wrap: wrap;
+}
+
+
+/*.flex_column {*/
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*border: 5px solid #0f0;
+    width: 100%;
+    height: 50%;
+    margin: 0 auto;
+    min-height: 500px;
+}*/
+
+.flex_item {
+    flex: 5 5 auto; /*shorthand for flex-grow, flex-shrink and flex-basis combined.*/
+}
+
+.fullWidth {
+    width: 100%;
+    height: 100%;
+}
+
+.halfWidth {
+    width: 640px;
+    height: 360px;
+}
+
+/*.chartTable {
+    width: 100%;
+    height: 100%;
+}*/
+
+
+.column {
+    border: 5px solid #00f;
+    width: 50%;
+    /*display: flex;*/
+}
+
+.chartItem {
+    border: 5px solid #f00;
+    width: 100px;
+    height: 100px;
+}
+
+
+.materialChartItem { /*these resize differently*/
+    border: 5px solid #f00;
+    width: 100px;
+    height: 100px;
+}
+
+
+.btn-group button {
+    border: 5px solid #fff; /* Green border */
+    padding: 10px 10px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left;
+}
+
+    .btn-group button:not(:last-child) {
+        /*border-right: none;*/ /* Prevent double borders */
+    }
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Add a background color on hover */
+button.btn-unpressed:hover {
+    background-color: #222;
+}
+
+button.btn-pressed:hover {
+    background-color: #ddd;
+}
+
+/*.btn-group button:active {
+    background-color: #444;
+}*/
+/*.btn-group button:focus {
+    background-color: #0f0;
+}
+*/
+
+.btn-pressed {
+    background-color: #fff;
+    color: #000;
+}
+
+.btn-unpressed {
+    background-color: #000;/*transparent; */
+    color: white; /* White text */
+}
+
+/*END of Classes*/
+
+
+
+/*sample*/
