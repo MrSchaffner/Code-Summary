@@ -1,0 +1,146 @@
+<!--With eta and vibe for 2 different tickers simultaneous 8 charts in total-->
+<HTML>
+
+<head>
+    <title>The SpyGLass Indicator 2.5</title>
+    <link rel="stylesheet" href="css/indicator.css">
+    <style>
+        html {
+            font-family: Roboto;
+            font-display: optional;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="dashboard_div" class="table_container">
+        <!-- A column-->
+        <div class="column">
+            <div class="box_container" id="" style="height:4%; background-color:TRANSPARENT; text-align: center;">
+                <div class="btn-group">
+                    <button class="btn-pressed" id="Auto_left">auto</button>
+                    <button class="ig_btn_time_left btn-unpressed" id="1Day">day</button>
+                    <button class="ig_btn_time_left btn-unpressed" id="1Hr">1hr</button>
+                    <button class="ig_btn_time_left btn-unpressed" id="30Min">30m</button>
+                    <button class="ig_btn_time_left btn-pressed" id="10Min">10m</button>
+                    <button class="ig_btn_time_left btn-unpressed" id="5Min">5m</button>
+                    <button class="ig_btn_time_left btn-unpressed" id="1Min">1m</button>
+                    <button class="ig_btn_time_left btn-unpressed" id="30Sec">30s</button>
+                </div>
+            </div>
+
+            <div class="box_container" style="height: 15%;">
+
+                <!-- <div id="ticker_graph" class="chartItem"></div>-->
+                <div id="ticker_dygraph_left" class="chartItem"></div>
+            </div>
+
+            <div class="box_container" id="impact_graph_container" style="height:41%;">
+
+                <!--<div id="impact_graph" class="chartItem"></div>-->
+                <div id="vibe_dygraph_left" class="chartItem"></div>
+            </div>
+
+            <div class="box_container lighten-bg" id="impact_graph_container" style="height:40%;">
+
+                <!--<div id="impact_graph" class="chartItem"></div>-->
+                <div id="impact_dygraph_left" class="chartItem"></div>
+            </div>
+
+        </div>
+
+
+        <!-- B COLUMN-->
+        <div class="column">
+            <div class="box_container lighten-bg" style="height: 60%;">
+                <!--<div id="impact_dybars" class="chartItem"></div>-->
+
+                <div id="vibe_bars_left" class="materialChartItem" style="height: 95%;"></div>
+            </div>
+
+            <div class="box_container" style="height: 40%;">
+                <!--<div id="impact_dybars" class="chartItem"></div>-->
+
+                <div id="impact_bars_left" class="materialChartItem" style="height: 95%;"></div>
+            </div>
+
+        </div>
+
+
+        
+
+
+        <!--goose Image column-->
+        <!--<div class="column">-->
+        <!--<div id="impact_table" class="chartItem"></div>-->
+        <!--<div class="box_container" style="height: 100%;">
+        <div style=" position: relative;">
+            <p id="hintsDiv" style="display:none; position: absolute; top: 0; left: 10px;">
+                Move: Shift + Drag <br />
+                Zoom: Draw Box <br />
+                Reset: Double Click <br />
+                Smoother: Pause, Type in Box, Enter <br />
+                Console: Ctrl + Shift + C <br />
+                SpyGlass Version 2.01 <br />
+                &#169; 2023 The Goose Group <br />
+            </p>
+            <img id="gooseImageContainer" src="resources/img/randomImage_1.gif" />
+        </div>
+
+    </div>-->
+        <!--</div>-->
+        <!--<iframe id="gooseVideoPlayer" src="https://www.youtube.com/embed/HiJPgQ7ML7c?controls=0&loop=1&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" autoplay></iframe>-->
+        <!--<div id="filter_div" style="padding-left: 2em; min-width: 250px"></div>
+    <div>
+      <button style="margin: 1em 1em 1em 2em" onclick="changeRange();">
+        Select range [2, 5]
+      </button><br />
+      <button style="margin: 1em 1em 1em 2em" onclick="changeOptions();">
+        Make the pie chart 3D
+      </button>
+    </div>-->
+
+
+    </div> <!--end of dashboard-->
+
+
+    <!--jQuery for BUttons-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <!--Load the Google Charts AJAX API and classes-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+
+    <!--buttons functions-->
+    <script type="text/javascript" src="js/UI_elements.js"></script>
+
+    <!-- How data is stored
+    requires google.charts, but is called by charts.js at runtime, so it should be fine.-->
+    <script type="text/javascript" src="js/viewModel.js"></script>
+
+    <!--Dygraph local scripts-->
+    <script type="text/javascript" src="resources/dygraphs/dist/dygraph.js"></script>
+    <link rel="stylesheet" type="text/css" href="resources/dygraphs/dist/dygraph.min.css" />
+
+    <!-- Create the Google and dyGraph charts -->
+    <script type="text/javascript" src="js/viewCharts.js"></script>
+
+    <!--Diagnostic Tools-->
+    <script src="js/diagnostic.js"></script>
+
+    <!-- Controller of Program -->
+    <script src="js/viewController.js"></script>
+
+    <!-- WebSocket Data is Consumed -->
+    <script src="js/wsConsumer.js"></script>
+
+    <script>
+        /////////////////////////////
+        // Start of Program
+
+        ControllerSetup();
+    </script>
+
+</body>
+
+</HTML>

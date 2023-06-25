@@ -1,0 +1,116 @@
+{
+  "results": [
+    {
+      "break_even_price": 402.015,
+      "day": {
+        "change": -0.03,
+        "change_percent": -75,
+        "close": 0.01,
+        "high": 0.03,
+        "last_updated": 1679270400000000000,
+        "low": 0.01,
+        "open": 0.01,
+        "previous_close": 0.04,
+        "volume": 3491,
+        "vwap": 0.01361
+      },
+      "details": {
+        "contract_type": "call",
+        "exercise_style": "american",
+        "expiration_date": "2023-03-20",
+        "shares_per_contract": 100,
+        "strike_price": 402,
+        "ticker": "O:SPY230320C00402000"
+      },
+      "greeks": {
+        "delta": "NaN",
+        "gamma": "NaN",
+        "theta": "NaN",
+        "vega": "NaN"
+      },
+      "implied_volatility": 20,
+      "last_quote": {
+        "ask": 0.02,
+        "ask_size": 16448,
+        "bid": 0.01,
+        "bid_size": 78,
+        "last_updated": 1679324532298249728,
+        "midpoint": 0.015,
+        "timeframe": "REAL-TIME"
+      },
+      "last_trade": {
+        "sip_timestamp": 1679342004585051392,
+        "conditions": [ 233 ],
+        "price": 0.01,
+        "size": 2,
+        "exchange": 312,
+        "timeframe": "REAL-TIME"
+      },
+      "open_interest": 5922,
+      "underlying_asset": {
+        "change_to_break_even": 8.275,
+        "last_updated": 1679356800000965632,
+        "price": 393.74,
+        "ticker": "SPY",
+        "timeframe": "DELAYED"
+      }
+    },
+    {
+      "break_even_price": 393.695,
+      "day": {
+        "change": -3.78,
+        "change_percent": -31.9,
+        "close": 8.08,
+        "high": 11.53,
+        "last_updated": 1679270400000000000,
+        "low": 8.08,
+        "open": 11.06,
+        "previous_close": 11.86,
+        "volume": 119,
+        "vwap": 9.6892
+      },
+      "details": {
+        "contract_type": "put",
+        "exercise_style": "american",
+        "expiration_date": "2023-03-20",
+        "shares_per_contract": 100,
+        "strike_price": 402,
+        "ticker": "O:SPY230320P00402000"
+      },
+      "greeks": {
+        "delta": "NaN",
+        "gamma": "NaN",
+        "theta": "NaN",
+        "vega": "NaN"
+      },
+      "implied_volatility": 20,
+      "last_quote": {
+        "ask": 8.55,
+        "ask_size": 294,
+        "bid": 8.06,
+        "bid_size": 250,
+        "last_updated": 1679343298703392000,
+        "midpoint": 8.305,
+        "timeframe": "REAL-TIME"
+      },
+      "last_trade": {
+        "sip_timestamp": 1679341813385854464,
+        "conditions": [ 227 ],
+        "price": 8.08,
+        "size": 5,
+        "exchange": 302,
+        "timeframe": "REAL-TIME"
+      },
+      "open_interest": 140,
+      "underlying_asset": {
+        "change_to_break_even": -0.045,
+        "last_updated": 1679356800000965632,
+        "price": 393.74,
+        "ticker": "SPY",
+        "timeframe": "DELAYED"
+      }
+    }
+  ],
+  "status": "OK",
+  "request_id": "e5c9a2afbdbaca062ae7f3c0f5b4a533"
+}

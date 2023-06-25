@@ -1,10 +1,10 @@
-# SpyGlass for The Goose Group
+# Live Market Indicator
 
 An options market indicator created for Financial club, The Goose Group. Connects Node.js server to Client JavaScript.
 
-## Projects
+## Version
 
-### [Version 1](https://github.com/MrSchaffner/Code-Summary/tree/master/SpyGlass_CodeSummary/SpyGlass_v1)
+### [Version 0.1](https://github.com/MrSchaffner/Code-Summary/tree/master/SpyGlass_CodeSummary/SpyGlass_v1)
 
 Used Javascript to consume market APIs in Websocket and RESTful form
 Implemented MVC Separation
@@ -16,7 +16,7 @@ Displayed data in readable form with Chart APIs
   alt="Spyglass Version 1 Image"
   style="display: inline-block; margin: 0 auto; max-width: 300px">
 
-### [Version 2](https://github.com/MrSchaffner/Code-Summary/tree/master/SpyGlass_CodeSummary/SpyGlass_v2)
+### [Version 2.0](https://github.com/MrSchaffner/Code-Summary/tree/master/SpyGlass_CodeSummary/SpyGlass_v2)
 
 Separated out program into 
 Node.js Server (Controller + Model) 
@@ -27,7 +27,7 @@ Node.js server consumed Sockets and RESTful APIs. Data was stored on server and 
 
 Separation improved multithreading and sped up program considerably. 
 
-Upgraded certain graphs away from Google Charts for speed.
+Upgraded certain graphs away from Google Charts for speed and more aesthetic options.
 
 <img
   src="https://github.com/MrSchaffner/Code-Summary/blob/master/Images_Display/spyglass_v2.jpg"

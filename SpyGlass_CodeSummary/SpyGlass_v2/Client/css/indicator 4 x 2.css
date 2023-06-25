@@ -1,0 +1,201 @@
+﻿@font-face {
+    font-family: Roboto;
+    font-display: optional;
+    /*font-display: block;*/ /*supposed to remove google error message on fonts */
+}
+
+body {
+    border: 0px solid #000;
+    padding: 0;
+    margin: 0;
+    /*background-size: cover;*/
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: #111;
+    background-image: url('../resources/img/gooseGroupWatermark.png');
+    overflow: hidden; /*hide scrollbars*/
+
+}
+
+
+p {
+    color: #fff;
+}
+
+h1 {
+    color: #fff;
+}
+
+/*IDs*/
+#dashboard_div {
+}
+
+#gooseImageContainer {
+    border: 0px solid #f00;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+#gooseVideoPlayer {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+}
+
+/*classes*/
+
+/*dygraph classes*/
+
+.dygraph-legend {
+    background: transparent !important;
+    color: #fff;
+}
+
+.dygraph-legend > span{ /*changes text color of labels in legends*/
+    /*background-color: #00ff00;*/
+    color: #fff;
+}
+
+/*
+.dygraph-legend-line {
+    background-color: #0000ff;
+}*/
+
+.dygraph-axis-label.dygraph-axis-label-x, .dygraph-axis-label.dygraph-axis-label-y {
+    /* took an hour to find this shit
+    more data here: https://dygraphs.com/css.html */
+    color: #fff;
+}
+
+/*.dygraph-axis-label {
+    background-color: #fff;
+    color: #ff0000;*/
+/*text-decoration-color: white;*/
+/*}*/
+
+
+
+.table_container {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+}
+
+.box_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /*background-color: blue;*/
+    /*border: 0px solid #000;*/
+    width: 100%;
+}
+
+
+
+.column {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /*border: 0px solid #000;*/
+    height: 100%;
+    width: 50%;
+    /*display: flex;*/
+}
+
+.quarter_column {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /*border: 0px solid #000;*/
+    height: 100%;
+    width: 25%;
+    /*display: flex;*/
+}
+
+.chartItem {
+    /*background-color: red;*/
+    /*border: 0px solid #000;*/
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+}
+
+
+.materialChartItem { /*these resize differently*/
+    /*border: 0px solid #000;*/
+    /*background-color: yellow;*/
+    width: 100%;
+    height: 100%;
+}
+
+.btn-group {
+    /*background-color: seagreen;*/
+    display: inline-block;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.btn-group button {
+    margin: 0 auto;
+    border: 1px solid #fff;
+    padding: 2px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    /*float: left;*/
+}
+
+.lighten-bg {
+    background-color: rgba(255,255,255,0.05);
+}
+
+    .btn-group button:not(:last-child) {
+        /*border-right: none;*/ /* Prevent double borders */
+    }
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Add a background color on hover */
+button.btn-unpressed:hover {
+    background-color: #444;
+}
+
+button.btn-pressed:hover {
+    background-color: #ddd;
+}
+
+/*.btn-group button:active {
+    background-color: #444;
+}*/
+/*.btn-group button:focus {
+    background-color: #0f0;
+}
+*/
+
+.btn-pressed {
+    background-color: #fff;
+    color: #000;
+}
+
+.btn-unpressed {
+    background-color: #000; /*transparent; */
+    color: white; /* White text */
+}
+
+/*END of Classes*/
+
+
+
+/*sample*/
