@@ -4,6 +4,10 @@ Unlike the other projects on GitHub, this repository only presents PARTS of proj
 
 ## Projects
 
+### [Jetpack Math Game](https://github.com/MrSchaffner/Code-Summary/tree/master/Jetpack_Math_CodeSummary)
+
+Jetpack math is a cross-platform math training app for Elementary school. Added features to existing Unity project and supported the App throughout launch to App Store, Google Play and Google Classroom.
+
 ### [Live Market Indicator](https://github.com/MrSchaffner/Code-Summary/tree/master/Market_Indicator_CodeSummary)
 
 An options market indicator created for financial club, The Goose Group. Connects Node.js server to Client JavaScript to display live Stock Market options data in an aesthetic format.
